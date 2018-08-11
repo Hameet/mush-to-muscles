@@ -4,4 +4,4 @@
 
 ### This allows me to contain all information such as exercise routines, videos about workouts and comments in one place
 
-#### Just getting started, more to come soon
+#### Just getting started, more to come soon. Check it out here https://mush-to-muscles.herokuapp.com/#/
