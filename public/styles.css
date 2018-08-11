@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+body {
+  background-color: "blue";
+  
+}
+
+.image {
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  width: 100%
+}
+
+
+/*Buttons*/
+
+button {
+  background-color: "red";
+  margin-top: 50px;
+}
+
+.del {
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #0C5;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  margin: 5em auto;
+  /* position: absolute;  */
+  top:0; right:0; bottom:0; left:0;
+  padding: 20px 0;
+  width: 220px;
+  height:100px;
+  background: #0D6;
+  border: 1px solid #0D6;
+  color: #FFF;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.edit {
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #0C5;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  margin: 1em auto;
+  /* position: absolute;  */
+  top:0; right:0; bottom:0; left:0;
+  padding: 20px 0;
+  width: 220px;
+  height:100px;
+  background: #0D6;
+  border: 1px solid #0D6;
+  color: #FFF;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.btn{
+  float: left;
+  width: 100%;
+  height: 60px;
+  line-height: 50px;
+  margin: 40px 0 50px 0;
+  background-color: #2C3E50;
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+ }
+
+ .create-btn{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #0C5;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  margin: 5em auto;
+  position: absolute; 
+  top:0; right:0; bottom:0; left:45px;
+  padding: 20px 0;
+  width: 500px;
+  height:80px;
+  background: #0D6;
+  border: 1px solid #0D6;
+  color: #FFF;
+  overflow: hidden;
+  transition: all 0.5s;
+ }
+
+ .create-btn:hover, .create-btn:active 
+ {
+   text-decoration: none;
+   color: #0C5;
+   border-color: #0C5;
+   background: #FFF;
+ }
+ 
+/*Table & Rows*/
+
+Table {
+  margin-top: 50px;
+}
+
+tr {
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #0D6
+}
+
+.row2  {
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: whitesmoke
+}
+
+/*Forms & Labels*/
+
+.showExerciseForm {
+  padding-top: 100px;
+}
+
+.form-container {
+  width: 400px;
+  height: 550px;
+  background-color: #E74C3C;
+  position: fixed;
+  top: 30%;
+  left: 45%;
+  margin-top: -50px;
+  margin-left: -80px;
+}
+
+.fancy-input{
+  float: left;
+  width: 100%;
+  margin: 0 -50px 50px -40px;
+}
+  
+label.input{
+    float: left;
+    width: 100%;
+    height: 5px;
+    margin: 50px 0 0 0px;
+    position: relative;
+    clear: both;
+  }
+
+label {
+    font-family: 'Indie Flower', cursive;
+    width: 400px;
+  }
+
+
+/*Text*/
+
+input[type="text"] {
+  width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #E74C3C;
+    color: white;
+    font-size: 22px;
+}
+
+
+h2 {
+  margin: 50px 0 0 0;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
+  font-weight: normal;
+  text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 90%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #0D6;
+}
+    
+/* Navbar */
+  
+nav.navbar, .navbar-default {
+  background-color: rgb(34, 181, 58);
+  margin-bottom: 0px;
+  padding-bottom: 10px; 
+   
+}
+
+.navbar-default {
+  background-image: none;
+  border: none;
+  border-radius: 0px;
+  
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white !important;
+  margin: inherit;
+}
+
+.navbar-default .navbar-brand {
+  color: white !important;
+  font-size: 25px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: white !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white !important;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+  color: rgb(31, 34, 194) !important;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: rgb(199, 149, 149) !important;
+  background-color: transparent;
+  
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: rgb(129, 31, 194) !important;
+  background-color: transparent;
+}
+ 
+strong {
+  font-size: 20px;
+  color: whitesmoke;
+  display: inline;
+  margin-right: 20px;
+  margin-left: -50px;
+  text-align: right;
+  padding-left: 60px;
+  padding-right: 10px;
+}
+
+strong:hover {
+  color: rgb(129, 31, 194) !important;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #e7e7e7;
+  width: 1300px;
+  margin-right: 50px;
+  margin-left: 00px;
+}
+
+
+
+
+
