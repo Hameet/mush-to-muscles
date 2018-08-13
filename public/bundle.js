@@ -21937,7 +21937,6 @@ var CreateExercise = function (_React$Component) {
       // e.preventDefault()
       // e.target.reset();
       this.props.dispatch((0, _exercises.addExercise)(this.state.newExercise));
-      this.props.submit();
     }
   }, {
     key: 'render',

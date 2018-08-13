@@ -21,7 +21,7 @@ class CreateExercise extends React.Component {
       // e.preventDefault()
       // e.target.reset();
       this.props.dispatch(addExercise(this.state.newExercise))
-      this.props.submit()
+      
     }
 
         render() {
