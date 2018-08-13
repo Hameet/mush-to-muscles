@@ -2,6 +2,8 @@ import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import {connect} from 'react-redux'
 
+import { Grid, Row, Col, Image} from 'react-bootstrap';
+
 import {getExercises} from '../actions/exercises'
 
 import ExerciseList from './ExerciseList'
@@ -34,9 +36,14 @@ class App extends React.Component {
     <div className='sidebar pure-u-1 pure-u-md-1-4'>
           <Header />
         </div>
+        <Grid>
+          <Row>
+            <Col xl={12} xs={6} sm={3} md={6} mdOffset={3}>
         <Route exact path='/' component={() => <button className="create-btn" name="showExerciseForm" onClick={this.toggleForm.bind(this)}>{this.state.showExerciseForm ? 'Cancel' : 'Create Exercise'}</button>} />
           {this.state.showExerciseForm && <Route exact path="/" component={CreateExercise} /> }
-     
+            </Col>
+          </Row>
+        </Grid>
         <Route exact path="/exercises" component={ExerciseList}/>
         <Route exact path='/exercises/:id' component={(props) => <Single {...props} />} />
         <Route exact path="/" component={Home} />

@@ -16,7 +16,7 @@ body {
 
 button {
   background-color: "red";
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .del {
@@ -142,7 +142,7 @@ tr {
   height: 550px;
   background-color: #E74C3C;
   position: fixed;
-  top: 30%;
+  top: 40%;
   left: 45%;
   margin-top: -50px;
   margin-left: -80px;
@@ -200,10 +200,9 @@ h2 {
 
 .centered {
   position: absolute;
-  top: 50%;
-  left: 10%;
-  right: 90%;
-  transform: translate(-50%, -50%);
+  top: 80%;
+  
+  /* transform: translate(-50%, -50%); */
   font-size: 30px;
   color: #0D6;
 }
@@ -281,7 +280,25 @@ strong:hover {
   margin-left: 00px;
 }
 
+/*Modal*/
 
+.modal-header {
+  width: 400px;
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+  padding-top: 150px !important;
+  
+}
+
+h5 {
+  color: black !important;
+  margin-top: -100px !important;
+  margin-bottom: 10px !important;
+  margin-left: 15px !important;
+  margin-right: 20px !important;
+  text-align: center !important;
+  font-size: 35px !important; 
+}  
 
 
 

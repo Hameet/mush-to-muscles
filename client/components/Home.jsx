@@ -1,19 +1,50 @@
 import React, { Component } from 'react'
-import { Grid, Row, Col, Image,ProgressBar } from 'react-bootstrap';
-// import hulkgif from 'images/hulkgif.gif'
+import {Image} from 'react-bootstrap';
+import Modal from 'react-responsive-modal'
 
+const modalStyle = {
+  fontFamily: "sans-serif",
+  textAlign: "left",
+  width: "90%"
+};
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.onOpenModal = this.onOpenModal.bind(this);
+    this.onCloseModal = this.onCloseModal.bind(this);
+    this.state = {
+      open: true,
+    };
+  }
+
+  onOpenModal() {
+    this.setState({ open: true });
+  }
+ 
+  onCloseModal() {
+    this.setState({ open: false });
+  }
+
   render() {
+    const { open } = this.state;
     return (
         <div>
           <div className="home-page">
           {/* <Image src={hulkgif} alt={"hulkgif"}/> */}
           <Image src="images/hulkgif.gif" className="image"/>
                    
-          
-             <p className="centered">Go ahead and add your exercises and informational links and create your own workout plans.</p> 
-          
+          <div style={modalStyle}>
+        {this.onOpenModal}
+        <Modal open={open} onClose={this.onCloseModal} style={modalStyle} >
+         {/* eslint-disable-next-line */}
+          <div className="modal-header">
+       
+          <h5>Add your exercise routines and other informational links and create your workout plans</h5>
+          </div>
+                
+        </Modal>
+      </div>       
         
           </div>    
 
@@ -22,3 +53,9 @@ export default class Home extends Component {
     )
   }
 }
+
+
+
+
+ 
+ 
