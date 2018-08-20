@@ -133,19 +133,24 @@ tr {
 
 /*Forms & Labels*/
 
+.form-box {
+  box-sizing: content-box; 
+}
+
+
 .showExerciseForm {
   padding-top: 100px;
 }
 
 .form-container {
+  position: absolute;
   width: 400px;
   height: 550px;
   background-color: #E74C3C;
-  position: fixed;
   top: 40%;
   left: 45%;
-  margin-top: -50px;
-  margin-left: -80px;
+  margin-top: 250px;
+  margin-left: -140px;
 }
 
 .fancy-input{

@@ -38,7 +38,7 @@ class App extends React.Component {
         </div>
         <Grid>
           <Row>
-            <Col xl={12} xs={6} sm={3} md={6} mdOffset={3}>
+            <Col xl={12} xs={6} sm={3} md={6} mdOffset={3} className="form-box">
         <Route exact path='/' component={() => <button className="create-btn" name="showExerciseForm" onClick={this.toggleForm.bind(this)}>{this.state.showExerciseForm ? 'Cancel' : 'Create Exercise'}</button>} />
           {this.state.showExerciseForm && <Route exact path="/" component={CreateExercise} /> }
             </Col>
