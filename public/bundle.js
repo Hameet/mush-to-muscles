@@ -21369,6 +21369,11 @@ var Home = function (_Component) {
                   'h5',
                   null,
                   'Add your exercise routines and other informational links and create your workout plans'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'warning' },
+                  'Warning: Due to an error in bootstrap 4, the links aren\'t working as they should. To open Code and Added workouts, please right click and open in a new tab. I\'m working on fixing this.'
                 )
               )
             )

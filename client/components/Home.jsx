@@ -41,6 +41,7 @@ export default class Home extends Component {
           <div className="modal-header">
        
           <h5>Add your exercise routines and other informational links and create your workout plans</h5>
+          <p className="warning">Warning: Due to an error in bootstrap 4, the links aren't working as they should. To open Code and Added workouts, please right click and open in a new tab. I'm working on fixing this.</p>
           </div>
                 
         </Modal>

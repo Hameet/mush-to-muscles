@@ -206,10 +206,12 @@ h2 {
 .centered {
   position: absolute;
   top: 80%;
-  
-  /* transform: translate(-50%, -50%); */
   font-size: 30px;
   color: #0D6;
+}
+
+.warning {
+  color: red
 }
     
 /* Navbar */
